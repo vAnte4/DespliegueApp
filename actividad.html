@@ -20,6 +20,10 @@
       flex: 1 1 250px;        /* Flex grow/shrink con base de 250px */
       margin: 1rem;
     }
+    .logo {
+      height: 50px;  
+      margin-right: 10px;
+    }
   </style>
 </head>
 <body>
@@ -27,7 +31,11 @@
   <!-- Encabezado principal con logo/título y navegación -->
   <header class="container-fluid bg-primary text-white py-3">
     <div class="container d-flex justify-content-between align-items-center">
-      <h1 class="h3 mb-0">Mi Sitio Web</h1>
+      <div class="d-flex align-items-center">
+        <img src="LogoLaRecoleta.png" alt="Logo IEST" class="logo">
+        <h1 class="h3 mb-0">IEST LA RECOLETA</h1>
+      </div>
+
       <!-- Navegación semántica de la página -->
       <nav>
         <ul class="nav">
@@ -43,7 +51,7 @@
     <!-- Sección principal (hero) centrada con Flexbox -->
     <section class="hero">
       <div>
-        <h2>Bienvenido a Nuestra Landing Page</h2>
+        <h2>Instituto Superior Tecnologico La Recoleta</h2>
         <p class="lead">Una oferta especial para ti. ¡Contáctanos hoy!</p>
         <a href="#contact" class="btn btn-primary">Más Información</a>
       </div>
